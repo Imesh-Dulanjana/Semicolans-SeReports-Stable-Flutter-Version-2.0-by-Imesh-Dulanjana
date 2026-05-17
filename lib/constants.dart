@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 
-const ip = "69.62.83.161";
-
 // =============================================================================
 // SERVER CONFIGURATION
 // Switch between Railway (testing) and live server by toggling the sections below.
 // =============================================================================
 
 // --- Railway (Testing Server) ---
-// Used for development/testing. Hosted on Railway, no cost for low-traffic testing.
-// DO NOT include /login here – the api.dart will append auth/login automatically.
-const String baseUrl  = "semicolans-sereports-flutter-android-ios-windows-production.up.railway.app/api/";
+// Used for development/testing. Hosted on Railway.
+// DO NOT include /login here – api.dart appends routes automatically.
+const String baseUrl =
+    "https://semicolans-sereports-flutter-android-ios-windows-production.up.railway.app/api/";
 
 // --- Live Server (Production) ---
-// Uncomment the lines below and comment out the Railway section above
-// when switching to the live production server.
-// const String baseUrl  = "https://sereportapi.semicolans.cloud/api/";
+// Uncomment below when switching to production server.
+
+// const String baseUrl = "https://sereportapi.semicolans.cloud/api/";
 
 // =============================================================================
 // APP COLORS
@@ -77,4 +76,12 @@ final List<String> gap = [
   "Above 180 Days",
 ];
 
-final List<String> location = ["All", "1", "2", "3", "4", "5", "6"];
+final List<String> location = [
+  "All",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+];
